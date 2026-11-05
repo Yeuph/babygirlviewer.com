@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Babygirl privacy</title>
+<meta name="description" content="What the Babygirl Second Life viewer does with your data: what goes to Second Life, what stays on your PC, and what we never collect.">
+<meta name="theme-color" content="#141418">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23141418'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-size='20' font-weight='700' text-anchor='middle' fill='%23f5a8d6'%3Eb%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site">
+  <div class="wrap">
+    <a class="mark" href="./">Babygirl <span class="tag">alpha</span></a>
+    <nav aria-label="Site">
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="privacy.html" aria-current="page">Privacy</a></li>
+        <li><a href="support.html">Support</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main" class="wrap">
+  <h1>Privacy</h1>
+  <p class="muted small">Babygirl alpha · last updated November 2026</p>
+
+  <p class="lead">Babygirl is a program on your PC. We run no servers for it and collect nothing from it: there is no
+  account with us, no analytics, no tracking, and no automatic crash upload.</p>
+
+  <h2>What goes to Second Life</h2>
+  <p>When you log in, Babygirl sends Linden Lab what a Second Life viewer sends to log in:</p>
+  <ul>
+    <li>your account name, and your password in the login system's hashed form (never the plain password);</li>
+    <li>where you want to start (your last location, home, or a region);</li>
+    <li>the viewer's name and version, and your Windows version;</li>
+    <li>two hashed machine IDs, made from your network adapter's address and your disk's serial number (if those can't
+      be read, your PC's name, hashed the same way). The raw values never leave your PC.</li>
+  </ul>
+  <p>After that, Babygirl talks to Second Life's servers to show you the world, your inventory, chat and IMs. What Linden
+  Lab does with this is covered by <a href="https://lindenlab.com/privacy">Linden Lab's own privacy policy</a>.</p>
+
+  <h2>What stays on your PC</h2>
+  <p>Babygirl keeps almost everything in its own folder (by default <code>%LOCALAPPDATA%\Programs\Babygirl</code>;
+  Start menu &gt; Babygirl &gt; "Babygirl folder" opens it):</p>
+  <ul>
+    <li><strong>Your login, with the password as plain text.</strong> Babygirl saves your Second Life name and password in
+      <code>login_profiles\creds.txt</code>, and sets that folder so other Windows accounts on this PC can't open it (an
+      administrator still can). In this alpha, every login is saved this way.</li>
+    <li><strong>Chat and IM logs, on by default:</strong> a chat log and IM logs for each day, plus the chat and IM
+      history shown in Babygirl's chat windows, saved when you log out. To stop the daily logs, close Babygirl, open
+      <code>preferences.txt</code> in its folder and change <code>ChatLogEnabled=True</code> to
+      <code>ChatLogEnabled=False</code>. That stops only the daily logs: the history saved when you log out stays on.</li>
+    <li>Your settings, muted people, outfits and landmarks.</li>
+    <li>A cache of what you've seen in-world. It can grow to a few GB.</li>
+    <li>Babygirl's logs, in the <code>logs</code> folder.</li>
+    <li>If Babygirl ever hangs, a small diagnostic file in the <code>logs</code> folder. It can hold bits of what
+      Babygirl had in memory at that moment, so it stays on your PC: the logs zip never takes it.</li>
+  </ul>
+  <p>Outside that folder: sounds are cached in <code>%APPDATA%\babygirlH\sounds</code>, and if you set up Ellie, your
+  sign-in for her stays in <code>%LOCALAPPDATA%\Babygirl</code>.</p>
+
+  <h2>Other places Babygirl connects to, only when you use them</h2>
+  <ul>
+    <li><strong>Parcel music</strong> is off when you first start Babygirl. If you turn it on, Babygirl connects to the
+      music stream of the land you're on. That stream is run by whoever set it up, and they can see your IP address.
+      Turning music off again mutes it, but the stream can keep running silently in the background.</li>
+    <li><strong>DJ broadcasting:</strong> if you broadcast, your audio goes to the stream server you entered. In this
+      alpha, the stream password you type is sent to that server unencrypted.</li>
+    <li><strong>Ellie</strong>, the optional helper: if you sign in to your own Claude (Anthropic), Codex (OpenAI) or
+      Gemini (Google) account for her, what you type to Ellie, your conversation with her, and the in-world details she
+      looks up to answer you are sent to that company through its own tool, under its own terms.</li>
+  </ul>
+
+  <h2>Logs you send us</h2>
+  <p>"Send Babygirl logs" (in the Start menu) makes a zip on your Desktop. Nothing is sent until you send it yourself.
+  It holds Babygirl's logs, your settings file, and your PC's basic specs (Windows version, graphics card, CPU, memory,
+  free disk space). The logs show your Second Life name, the places you visited, the network addresses of the Second
+  Life servers you used, and folder paths on your PC. Send logs replaces your Windows user name in them with
+  &lt;user&gt;, and session keys and password fields with &lt;redacted&gt;.
+  The zip never holds your password, your chat or your IMs. We use it only to fix bugs. If you post it in the alpha's
+  Discord channel, the other testers there can see it too.</p>
+
+  <h2>Uninstalling</h2>
+  <p>The uninstaller removes Babygirl, its cache and its program logs (not your chat history), then asks before deleting
+  your saved logins, chat history, settings, Ellie's sign-ins and the sound cache. "No" (the default) keeps them all,
+  including the password file.</p>
+
+  <h2>This website</h2>
+  <p>This site sets no cookies and loads no trackers or outside scripts. The company that hosts it may keep normal
+  server logs, such as IP addresses.</p>
+
+  <h2>Questions</h2>
+  <p>Write to <a href="mailto:support@babygirlviewer.com">support@babygirlviewer.com</a>.</p>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <p>Babygirl is not provided or supported by Linden Lab, the makers of Second Life.</p>
+    <p><a href="faq.html">FAQ</a> · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></p>
+  </div>
+</footer>
+</body>
+</html>
