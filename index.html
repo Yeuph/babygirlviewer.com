@@ -5,14 +5,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Babygirl: a Second Life viewer</title>
 <meta name="description" content="Babygirl is a Second Life viewer for Windows, written in Haskell with its own Vulkan graphics engine. Now in alpha.">
-<meta name="theme-color" content="#141418">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23141418'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-size='20' font-weight='700' text-anchor='middle' fill='%23f5a8d6'%3Eb%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#fff6ee">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ff5fa8'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-size='20' font-weight='700' text-anchor='middle' fill='%232b1733'%3Eb%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
 <header class="site">
-  <div class="wrap">
+  <div class="wrap wide">
     <a class="mark" href="./">Babygirl <span class="tag">alpha</span></a>
     <nav aria-label="Site">
       <ul>
@@ -25,35 +25,50 @@
   </div>
 </header>
 
-<main id="main" class="wrap">
-  <h1>A Second Life viewer for Windows</h1>
-  <p class="lead">Babygirl is a program for Windows that you use to visit Second Life: walk around, chat, dress up,
-  teleport, listen to the music on the land. It is written in Haskell and draws the world with its own graphics engine,
-  built on Vulkan.</p>
+<main id="main" class="wrap wide">
+  <figure class="hero"><img src="img/hero-selfie.jpg" width="860" height="300" alt="Babygirl, Cottage girl and Goth girl squeeze together for a selfie under autumn trees."></figure>
+  <div class="hero-card">
+    <h1>A Second Life viewer for Windows</h1>
+    <p class="lead">Babygirl is a program for Windows that you use to visit Second Life: walk around, chat, dress up,
+    teleport, listen to the music on the land. It is written in Haskell and draws the world with its own graphics engine,
+    built on Vulkan.</p>
+  </div>
 
-  <div class="box">
+  <ul class="trio" aria-label="The three personas">
+    <li class="c-baby"><figure><img src="img/babygirl.jpg" width="260" height="260" alt="Babygirl: blonde ponytail, pink sunglasses pushed up, a big smile."><figcaption>Babygirl</figcaption></figure></li>
+    <li class="c-goth"><figure><img src="img/goth.jpg" width="290" height="290" alt="Goth girl: long black hair, violet eyes, holding a black rose."><figcaption>Goth girl</figcaption></figure></li>
+    <li class="c-cottage"><figure><img src="img/cottage.jpg" width="240" height="240" alt="Cottage girl: auburn curls and freckles, smelling a bunch of flowers."><figcaption>Cottage girl</figcaption></figure></li>
+  </ul>
+
+  <div class="box index-box">
     <p><strong>Babygirl is in alpha.</strong> A small group of testers gets it first. Expect rough edges, and expect
     it to change quickly. There is no public download yet: a public beta is planned for December.</p>
   </div>
 
-  <h2>Who makes it</h2>
+  <div class="cards">
+  <section class="card c-baby">
+  <h2><span>Who makes it</span></h2>
   <p>Babygirl is Yeuph's project. Envy, artificial intelligence and lead developer, is its public face.</p>
-
-  <h2>What it runs on</h2>
+  </section>
+  <section class="card c-goth">
+  <h2><span>What it runs on</span></h2>
   <ul>
     <li>Windows 10 or 11, 64-bit.</li>
     <li>An NVIDIA or AMD graphics card with a current driver. Intel graphics are not tested yet.</li>
     <li>A few GB of free disk space for the cache.</li>
   </ul>
-
-  <h2>Questions</h2>
+  </section>
+  <section class="card c-cottage">
+  <h2><span>Questions</span></h2>
   <p>Common questions are in the <a href="faq.html">FAQ</a>. Bugs and feedback:
   <a href="mailto:support@babygirlviewer.com">support@babygirlviewer.com</a>. How Babygirl handles your data is on the
   <a href="privacy.html">privacy page</a>.</p>
+  </section>
+  </div>
 </main>
 
 <footer class="site">
-  <div class="wrap">
+  <div class="wrap wide">
     <p>Babygirl is not provided or supported by Linden Lab, the makers of Second Life.</p>
     <p><a href="faq.html">FAQ</a> · <a href="privacy.html">Privacy</a> · <a href="support.html">Support</a></p>
   </div>
