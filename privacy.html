@@ -34,15 +34,15 @@
     </div>
   </div>
 
-  <p class="lead">Babygirl is a program on your PC. We run no servers for it and collect nothing from it: there is no
+  <p class="lead">Babygirl runs on your PC. We don't run any servers for it, and we collect nothing from it. There's no
   account with us, no analytics, no tracking, and no automatic crash upload.</p>
 
   <h2><span>What goes to Second Life</span></h2>
-  <p>When you log in, Babygirl sends Linden Lab what a Second Life viewer sends to log in:</p>
+  <p>When you log in, Babygirl sends Linden Lab the standard Second Life login details:</p>
   <ul>
     <li>your account name, and your password in the login system's hashed form (never the plain password);</li>
     <li>where you want to start (your last location, home, or a region);</li>
-    <li>the viewer's name and version, and your Windows version;</li>
+    <li>Babygirl's name and version, and your Windows version;</li>
     <li>two hashed machine IDs, made from your network adapter's address and your disk's serial number (if those can't
       be read, your PC's name, hashed the same way). The raw values never leave your PC.</li>
   </ul>
@@ -59,15 +59,15 @@
     <li><strong>Chat and IM logs, on by default:</strong> a chat log and IM logs for each day, plus the chat and IM
       history shown in Babygirl's chat windows, saved when you log out. To stop the daily logs, close Babygirl, open
       <code>preferences.txt</code> in its folder and change <code>ChatLogEnabled=True</code> to
-      <code>ChatLogEnabled=False</code>. That stops only the daily logs: the history saved when you log out stays on.</li>
+      <code>ChatLogEnabled=False</code>. That stops only the daily logs. The history saved when you log out stays on.</li>
     <li>Your settings, muted people, outfits and landmarks.</li>
     <li>A cache of what you've seen in-world. It can grow to a few GB.</li>
     <li>Babygirl's logs, in the <code>logs</code> folder.</li>
     <li>If Babygirl ever hangs, a small diagnostic file in the <code>logs</code> folder. It can hold bits of what
-      Babygirl had in memory at that moment, so it stays on your PC: the logs zip never takes it.</li>
+      Babygirl had in memory at that moment, so it stays on your PC and never goes in the logs zip.</li>
   </ul>
-  <p>Outside that folder: sounds are cached in <code>%APPDATA%\babygirlH\sounds</code>, and if you set up Ellie, your
-  sign-in for her stays in <code>%LOCALAPPDATA%\Babygirl</code>.</p>
+  <p>Outside that folder: sounds are cached in <code>%APPDATA%\babygirlH\sounds</code>, and if you set up Ellie (the optional
+  helper, below), your sign-in for her stays in <code>%LOCALAPPDATA%\Babygirl</code>.</p>
 
   <h2><span>Other places Babygirl connects to, only when you use them</span></h2>
   <ul>
@@ -85,7 +85,7 @@
   <p>"Send Babygirl logs" (in the Start menu) makes a zip on your Desktop. Nothing is sent until you send it yourself.
   It holds Babygirl's logs, your settings file, and your PC's basic specs (Windows version, graphics card, CPU, memory,
   free disk space). The logs show your Second Life name, the places you visited, the network addresses of the Second
-  Life servers you used, and folder paths on your PC. Send logs replaces your Windows user name in them with
+  Life servers you used, and folder paths on your PC. "Send Babygirl logs" replaces your Windows user name in them with
   &lt;user&gt;, and session keys and password fields with &lt;redacted&gt;.
   The zip never holds your password, your chat or your IMs. We use it only to fix bugs. If you post it in the alpha's
   Discord channel, the other testers there can see it too.</p>

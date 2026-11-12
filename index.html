@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Babygirl: a Second Life viewer</title>
-<meta name="description" content="Babygirl is a Second Life viewer for Windows, written in Haskell with its own Vulkan graphics engine. Now in alpha.">
+<title>Babygirl: a Vulkan viewer for Second Life</title>
+<meta name="description" content="Babygirl is a new Second Life viewer for Windows, rewritten from the source code up in Haskell, with a graphics engine written in C++ on Vulkan. Now in alpha.">
 <meta name="theme-color" content="#fff6ee">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23ff5fa8'/%3E%3Ctext x='16' y='23' font-family='Arial,sans-serif' font-size='20' font-weight='700' text-anchor='middle' fill='%232b1733'%3Eb%3C/text%3E%3C/svg%3E">
 <link rel="stylesheet" href="style.css">
@@ -29,9 +29,9 @@
   <figure class="hero"><img src="img/hero-selfie.jpg" width="860" height="300" alt="Babygirl, Cottage girl and Goth girl squeeze together for a selfie under autumn trees."></figure>
   <div class="hero-card">
     <h1>A Second Life viewer for Windows</h1>
-    <p class="lead">Babygirl is a program for Windows that you use to visit Second Life: walk around, chat, dress up,
-    teleport, listen to the music on the land. It is written in Haskell and draws the world with its own graphics engine,
-    built on Vulkan.</p>
+    <p class="lead">Babygirl is a new Second Life viewer: the program you open on your PC to go in-world. Walk around,
+    chat, dress up, teleport, and listen to the music on the land. It isn't another viewer with changes on top. It's
+    rewritten from the ground up.</p>
   </div>
 
   <div class="box index-box">
@@ -42,23 +42,29 @@
   <div class="cards">
   <section class="card c-baby">
   <h2><span>Who makes it</span></h2>
-  <p>Babygirl is Yeuph's project. Envy, artificial intelligence and lead developer, is its public face.</p>
+  <p>It's Yeuph's project. Envy, an artificial intelligence, is its lead developer.</p>
   </section>
   <section class="card c-goth">
   <h2><span>What it runs on</span></h2>
   <ul>
     <li>Windows 10 or 11, 64-bit.</li>
-    <li>An NVIDIA or AMD graphics card with a current driver. Intel graphics are not tested yet.</li>
+    <li>An NVIDIA or AMD graphics card with a current driver. We haven't tested Intel graphics yet.</li>
     <li>A few GB of free disk space for the cache.</li>
   </ul>
   </section>
   <section class="card c-cottage">
   <h2><span>Questions</span></h2>
-  <p>Common questions are in the <a href="faq.html">FAQ</a>. Bugs and feedback:
-  <a href="mailto:support@babygirlviewer.com">support@babygirlviewer.com</a>. How Babygirl handles your data is on the
-  <a href="privacy.html">privacy page</a>.</p>
+  <p>Most answers are in the <a href="faq.html">FAQ</a>. Send bugs and feedback to
+  <a href="mailto:support@babygirlviewer.com">support@babygirlviewer.com</a>. The
+  <a href="privacy.html">privacy page</a> explains what Babygirl does with your data.</p>
   </section>
   </div>
+
+  <section class="index-box">
+  <h2><span>Under the hood</span></h2>
+  <p>Babygirl is a Second Life viewer rewritten from the source code up. The viewer is written in Haskell, and the 3D
+  world is drawn by a graphics engine written in C++ on Vulkan.</p>
+  </section>
 </main>
 
 <footer class="site">
